@@ -1,10 +1,15 @@
 import React from "react";
-import CompoundToggle from "./CompoundToggle";
+import SlideShow from "./SlideShowCompound/SlideShow";
+import "./compound.css";
 
 const CompoundDemo = () => (
   <section>
-    <CompoundToggle />
+    <SlideShow>
+      <SlideShow.ProgressBar />
+      <SlideShow.Viewport />
+      <SlideShow.ProgressBar />
+    </SlideShow>
   </section>
 );
 
-export default CompoundToggle;
+export default CompoundDemo;
