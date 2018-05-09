@@ -1,8 +1,8 @@
 # React: Beyond the Basics - Part 2
 
-In the last workshop, we covered more advanced features and design patterns in React development. We'll continue this exploration, getting into some much more complicated design patterns as well as some of the newest and shiniest features in recent React updates. We'll look at:
+App Academy Job Seeker Technical Workshop 4/26/18
 
-* Higher Order Components (review from last time)
+In the last workshop, we covered more advanced features and design patterns in React development. We'll continue this exploration, getting into some much more complicated design patterns as well as some of the newest and shiniest features in recent React updates. We'll look at:
 
 * Compound components
 
@@ -15,3 +15,13 @@ Along the way we may brush up against some new Javascript syntax or CSS properti
 * `display: contents`
 
 * CSS Grid
+
+### Demos
+
+* [Review of Higher Order Components from last workshop](https://github.com/matthaws/react-workshop/tree/master/src/components/higherOrderComponents)
+
+* [Compound Components](./src/components/compoundComponents/)
+
+* Context
+
+* Render props
