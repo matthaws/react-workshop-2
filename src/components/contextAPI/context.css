@@ -1,0 +1,39 @@
+.slide-show {
+  display: flex;
+  flex-direction: row;
+}
+
+.viewport {
+  width: 90vw;
+  height: 100vh;
+  background-color: skyblue;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: fantasy;
+  font-size: 100px;
+}
+
+.progress-bar {
+  list-style: none;
+  margin: 0 auto;
+  font-size: 50px;
+  font-family: fantasy;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.slide {
+  cursor: pointer;
+}
+
+.active {
+  color: red;
+  font-weight: bold;
+}
+
+.style-div {
+  display: contents;
+}
