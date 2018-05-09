@@ -1,6 +1,6 @@
 # React: Beyond the Basics - Part 2
 
-App Academy Job Seeker Technical Workshop 4/26/18
+App Academy Job Seeker Technical Workshop 5/11/18
 
 In the last workshop, we covered more advanced features and design patterns in React development. We'll continue this exploration, getting into some much more complicated design patterns as well as some of the newest and shiniest features in recent React updates. We'll look at:
 
