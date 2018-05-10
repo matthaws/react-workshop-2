@@ -19,7 +19,6 @@ export const ProgressBar = ({ slides, handleClick, currentSlide }) => {
             </li>
           );
         });
-        debugger;
         return <ul className="progress-bar">{progressItems}</ul>;
       }}
     </SlideShowContext.Consumer>
