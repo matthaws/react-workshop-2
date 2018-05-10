@@ -22,6 +22,6 @@ Along the way we may brush up against some new Javascript syntax or CSS properti
 
 * [Compound Components](./src/components/compoundComponents/)
 
-* Context
+* [Context](./src/components/contextAPI/)
 
 * Render props
