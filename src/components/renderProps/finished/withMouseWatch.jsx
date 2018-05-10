@@ -1,6 +1,11 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class MouseWatch extends Component {
+  static propTypes = {
+    render: PropTypes.func.isRequired
+  };
+
   state = { x: 0, y: 0 };
 
   componentDidMount() {

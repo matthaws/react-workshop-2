@@ -126,3 +126,7 @@ const CompoundDemo = () => (
 This is a compound component, in that it is made up of smaller subcomponents that can be used piecemeal as you want them. Right now, however, our implementation requires the ProgressBar and Viewport to be _direct_ children of SlideShow in order to get those props they need from SlideShow. It will break if we introduce a wrapping div for styling or something, because when we iterate over `this.props.children` in SlideShow, we are only dealing with direct children.
 
 It used to be more complicated to fix this problem. But now we have a cool new tool for this - more on that in the next section!
+
+### Resources
+
+* [react-tabs](https://github.com/reactjs/react-tabs): a React library that uses Compound Component pattern.

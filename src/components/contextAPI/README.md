@@ -77,3 +77,9 @@ Inside that child function we're pulling out the data we care about with object 
 Note that we are making a context specific to one component. I could make multiple contexts for different components or features, sort of like independent slices of state. This is how it is typically used and demoed, and how all the official React docs show off using the future.
 
 However, I could also, theoretically, make an app-wide context that wraps the entire app and then behaves a lot like the Redux store. This explains why you may have heard people talk about the new Context API making Redux irrelevant, but that's not entirely true. Redux does more than just state management and could still be the right tool for a lot of projects. But we all know that sometimes the Redux boilerplate code is overkill for some smaller projects and we have the option now of using React's native Context for some help with state management and avoiding prop drilling.
+
+### Resources
+
+* [Official React docs on Context](https://reactjs.org/docs/context.html)
+
+* [A thorough guide and demo from Robin Wieruch](https://www.robinwieruch.de/react-context-api/)
