@@ -14,7 +14,7 @@ Along the way we may brush up against some new Javascript syntax or CSS properti
 
 * `display: contents`
 
-* CSS Grid
+* inline CSS with React
 
 ### Demos
 
