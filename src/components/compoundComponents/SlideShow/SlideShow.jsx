@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { Viewport, ProgressBar } from "./SlideShowComponents";
 
 class SlideShow extends Component {
   state = {
@@ -44,20 +45,3 @@ class SlideShow extends Component {
 }
 
 export default SlideShow;
-
-const Viewport = ({ slide }) => {
-  return <section className="viewport">{slide.text}</section>;
-};
-
-const ProgressBar = ({ slides, handleClick, currentSlide }) => {
-  const progressItems = slides.map((slide, idx) => {
-    const className = currentSlide === idx ? "active slide" : "slide";
-    return (
-      <li onClick={handleClick(idx)} className={className}>
-        {slide.text}
-      </li>
-    );
-  });
-
-  return <ul className="progress-bar">{progressItems}</ul>;
-};

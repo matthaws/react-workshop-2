@@ -1,11 +1,9 @@
 import React from "react";
-import withMouseWatch from "./withMouseWatch";
-import cat from "../../assets/cat-13.png";
+import MouseWatch from "./withMouseWatch";
+import cat from "../../../assets/cat-13.png";
 
 const RenderPropsDemo = () => {
-  const ShowPositionWatched = withMouseWatch(ShowPosition);
-  const MousePositionWatched = withMouseWatch(MousePosition);
-  return <MousePositionWatched />;
+  return <MouseWatch render={(x, y) => <ShowPosition x={x} y={y} />} />;
 };
 
 export default RenderPropsDemo;

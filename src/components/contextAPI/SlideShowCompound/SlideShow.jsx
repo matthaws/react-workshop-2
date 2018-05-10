@@ -2,8 +2,11 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 const Viewport = ({ slide }) => {
-  debugger;
   return <section className="viewport">{slide.text}</section>;
+};
+
+Viewport.propTypes = {
+  slide: PropTypes.obj.isRequired
 };
 
 const ProgressBar = ({ slides, handleClick, currentSlide }) => {
@@ -17,6 +20,12 @@ const ProgressBar = ({ slides, handleClick, currentSlide }) => {
   });
 
   return <ul className="progress-bar">{progressItems}</ul>;
+};
+
+ProgressBar.propTypes = {
+  slides: PropType.array.isRequired,
+  handleClick: PropType.func.isRequired,
+  currentSlide: PropType.number.isRequired
 };
 
 class SlideShow extends Component {
