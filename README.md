@@ -24,4 +24,4 @@ Along the way we may brush up against some new Javascript syntax or CSS properti
 
 * [Context](./src/components/contextAPI/)
 
-* Render props
+* [Render props](./src/components/renderProps/)
