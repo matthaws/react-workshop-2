@@ -7,6 +7,9 @@ class SlideShow extends Component {
     currentSlide: this.props.currentSlide
   };
 
+  static Viewport = Viewport;
+  static ProgressBar = ProgressBar;
+
   static defaultProps = {
     currentSlide: 0,
     slides: [{ text: "1" }, { text: "2" }, { text: "3" }, { text: "4" }]
@@ -31,16 +34,16 @@ class SlideShow extends Component {
     const { slides } = this.props;
     const slide = slides[currentSlide];
 
-    return (
-      <section className="slide-show">
-        <Viewport slide={slide} />
-        <ProgressBar
-          handleClick={this.handleClick}
-          slides={slides}
-          currentSlide={currentSlide}
-        />
-      </section>
-    );
+    const children = React.Children.map(this.props.children, child => {
+      return React.cloneElement(child, {
+        currentSlide,
+        slides,
+        slide,
+        handleClick: this.handleClick
+      });
+    });
+
+    return <section className="slide-show">{children}</section>;
   }
 }
 

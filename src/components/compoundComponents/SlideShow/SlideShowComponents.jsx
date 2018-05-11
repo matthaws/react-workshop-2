@@ -6,7 +6,7 @@ export const Viewport = ({ slide }) => {
 };
 
 Viewport.propTypes = {
-  slide: PropTypes.obj.isRequired
+  slide: PropTypes.object.isRequired
 };
 
 export const ProgressBar = ({ slides, handleClick, currentSlide }) => {
@@ -23,7 +23,7 @@ export const ProgressBar = ({ slides, handleClick, currentSlide }) => {
 };
 
 ProgressBar.propTypes = {
-  slides: PropType.array.isRequired,
-  handleClick: PropType.func.isRequired,
-  currentSlide: PropType.number.isRequired
+  slides: PropTypes.array.isRequired,
+  handleClick: PropTypes.func.isRequired,
+  currentSlide: PropTypes.number.isRequired
 };

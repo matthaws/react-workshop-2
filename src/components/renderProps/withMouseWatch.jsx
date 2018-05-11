@@ -1,24 +1,23 @@
 import React, { Component } from "react";
 
-const withMouseWatch = WrappedComponent => {
-  return class extends Component {
-    state = { x: 0, y: 0 };
+class MouseWatch extends Component {
+  state = { x: 0, y: 0 };
 
-    componentDidMount() {
-      window.addEventListener("mousemove", this.handleMove);
-    }
+  componentDidMount() {
+    window.addEventListener("mousemove", this.handleMove);
+  }
 
-    handleMove = e => {
-      this.setState({
-        x: e.clientX,
-        y: e.clientY
-      });
-    };
-
-    render() {
-      return <WrappedComponent {...this.state} {...this.props} />;
-    }
+  handleMove = e => {
+    this.setState({
+      x: e.clientX,
+      y: e.clientY
+    });
   };
-};
 
-export default withMouseWatch;
+  render() {
+    const { x, y } = this.state;
+    return this.props.render(x, y);
+  }
+}
+
+export default MouseWatch;

@@ -3,6 +3,11 @@
   flex-direction: row;
 }
 
+.cool-styles {
+  border: 1px solid red;
+  display: contents;
+}
+
 .viewport {
   width: 90vw;
   height: 100vh;
@@ -32,8 +37,4 @@
 .active {
   color: red;
   font-weight: bold;
-}
-
-.style-div {
-  display: contents;
 }

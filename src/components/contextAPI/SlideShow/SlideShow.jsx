@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { Viewport, ProgressBar } from "./SlideShowComponents";
+import SlideShowContext from "./SlideShowContext";
 
 class SlideShow extends Component {
   state = {
@@ -33,15 +35,19 @@ class SlideShow extends Component {
     const { slides } = this.props;
     const slide = slides[currentSlide];
 
-    const children = React.Children.map(this.props.children, child =>
-      React.cloneElement(child, {
-        slide,
-        handleClick: this.handleClick,
-        slides,
-        currentSlide
-      })
+    return (
+      <SlideShowContext.Provider
+        value={{
+          slide,
+          currentSlide,
+          slides,
+          handleClick: this.handleClick
+        }}
+      >
+        <section className="slide-show">{this.props.children}</section>
+      </SlideShowContext.Provider>
     );
-    return <section className="slide-show">{children}</section>;
   }
 }
+
 export default SlideShow;

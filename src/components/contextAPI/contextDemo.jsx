@@ -1,15 +1,13 @@
 import React from "react";
-import SlideShow from "./SlideShowContext/SlideShow";
+import SlideShow from "./SlideShow/SlideShow";
 import "./context.css";
 
 const ContextDemo = () => {
   return (
     <section>
       <SlideShow>
-        <div className="style-div">
-          <SlideShow.ProgressBar />
-        </div>
-        <div className="style-div">
+        <SlideShow.ProgressBar />
+        <div className="cool-styles">
           <SlideShow.Viewport />
           <SlideShow.ProgressBar />
         </div>
