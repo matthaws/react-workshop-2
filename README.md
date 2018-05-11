@@ -10,7 +10,7 @@ In the last workshop, we covered more advanced features and design patterns in R
 
 * Render props
 
-Along the way we may brush up against some new Javascript syntax or CSS properties that you may not yet have seen including:
+Along the way we may brush up against some new CSS properties that you may not yet have seen including:
 
 * `display: contents`
 
