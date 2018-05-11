@@ -83,3 +83,5 @@ However, I could also, theoretically, make an app-wide context that wraps the en
 * [Official React docs on Context](https://reactjs.org/docs/context.html)
 
 * [A thorough guide and demo from Robin Wieruch](https://www.robinwieruch.de/react-context-api/)
+
+* [An amazing comparison of React Context, Redux, and basically other React state manipulategement solution out there.](https://github.com/GantMan/ReactStateMuseum)
